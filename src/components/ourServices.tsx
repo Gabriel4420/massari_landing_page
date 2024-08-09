@@ -21,7 +21,7 @@ const OurServices: React.FC = () => {
           </h2>
           <p>
             The signal research process is a comprehensive, multi-day journey,
-            powered by state-of-the-art NVIDIA GPU'Strategy s. It rigorously
+            powered by state-of-the-art NVIDIA GPU&apos;Strategys. It rigorously
             tests over 2 billion pattern combinations, ensuring that only the
             most effective and reliable signals are selected.
           </p>

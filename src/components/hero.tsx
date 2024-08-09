@@ -7,12 +7,12 @@ const Hero: React.FC = () => {
     <div className="bg-center h-1/2 lg:h-screen bg-2  bg-[#ffc501] bg-cover py-12">
       <div className="max-w-7xl mx-auto py-20 mt-20 px-4  sm:py-16 sm:px-3 lg:px-8 lg:flex lg:flex-col lg:items-center lg:justify-between">
         <h1 className="text-xl hidden lg:block md:block lg:text-6xl text-center font-normal tracking-tight text-gray-900 md:text-6xl">
-          <span className="block xl:inline capitalize">A Hedge fund that uses a proprietary algorithm for</span>{' '}
+          <span className="block xl:inline capitalize">A Hedge fund that uses a proprietary algorithm for</span>&apos;&apos;
           <span className="block text-white xl:inline">Trading Decisions</span>
         </h1>
 
         <h1 className="text-3xl lg:hidden  md:hidden text-center font-normal tracking-tight text-gray-900 md:text-6xl">
-          <span className="xl:inline capitalize">A Hedge fund that uses a proprietary algorithm for</span>{' '}
+          <span className="xl:inline capitalize">A Hedge fund that uses a proprietary algorithm for</span>&apos;&apos;
           <span className=" text-white inline">Trading Decisions</span>
         </h1> 
         <div className="mt-8 flex items-center justify-center lg:py-28 lg:mt-0 lg:flex-shrink-0">
