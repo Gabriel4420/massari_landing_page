@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
         <div className="mt-8 flex items-center justify-center lg:py-28 lg:mt-0 lg:flex-shrink-0">
           <div className="inline-flex rounded-md shadow">
             <a href="#" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-[#cc9d00] hover:bg-[#b28900]">
-             <Coffee size={22} className='mr-5' /> Let's Talk
+             <Coffee size={22} className='mr-5' /> Let &apos; s Talk
             </a>
           </div>
           <div className="ml-3 inline-flex rounded-md shadow">
