@@ -7,7 +7,7 @@ import React, { useEffect, useState } from "react";
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [selectedItem, setSelectedItem] = useState<string>('');
+  const [selectedItem, setSelectedItem] = useState<string>("");
 
   const menuItems = [
     { name: "Home", href: "#" },
@@ -64,9 +64,14 @@ const Header: React.FC = () => {
                   onClick={() => handleMenuItemClick(item.name)}
                   className={`${
                     selectedItem === item.name
-                      ? 'border-indigo-500 text-gray-900'
-                      : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700'
-                  } text-black inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"`}>
+                      ? "border-indigo-500 text-gray-900"
+                      : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                  } ${
+                    isScrolled
+                      ? "text-gray-900"
+                      : "text-white hover:text-shadow"
+                  } inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"`}
+                >
                   {item.name}
                 </Link>
               ))}
@@ -75,13 +80,23 @@ const Header: React.FC = () => {
           <div className="-mr-2 flex items-center sm:hidden">
             <button
               onClick={toggleMenu}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-[#cc9d00] focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
             >
               <span className="sr-only">Open main menu</span>
               {isOpen ? (
-                <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+                <XMarkIcon
+                  className={`${
+                    isScrolled ? "text-black" : "text-white"
+                  } block h-6 w-6`}
+                  aria-hidden="true"
+                />
               ) : (
-                <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                <Bars3Icon
+                  className={`${
+                    isScrolled ? "text-black" : "text-white"
+                  } block h-6 w-6`}
+                  aria-hidden="true"
+                />
               )}
             </button>
           </div>
@@ -90,19 +105,20 @@ const Header: React.FC = () => {
 
       <div className={`${isOpen ? "block bg-white" : "hidden"} sm:hidden`}>
         <div className="px-2 pt-2 pb-3 space-y-1 text-right ">
-        {menuItems.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  onClick={() => handleMenuItemClick(item.name)}
-                  className={`${
-                    selectedItem === item.name
-                      ? 'border-indigo-500 text-gray-900'
-                      : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700'
-                  } text-black flex flex-col items-end px-1 pt-1 border-b-2 text-sm font-medium"`}>
-                  {item.name}
-                </Link>
-              ))}
+          {menuItems.map((item) => (
+            <Link
+              key={item.name}
+              href={item.href}
+              onClick={() => handleMenuItemClick(item.name)}
+              className={`${
+                selectedItem === item.name
+                  ? "border-indigo-500 text-gray-900"
+                  : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700"
+              } text-black flex flex-col items-end px-1 pt-1 border-b-2 text-sm font-medium"`}
+            >
+              {item.name}
+            </Link>
+          ))}
         </div>
       </div>
     </header>

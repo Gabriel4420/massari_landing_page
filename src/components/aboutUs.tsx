@@ -2,28 +2,30 @@ import React from "react";
 import Bubble from "./bubble";
 import SignalsPanel from "./signalsPanel";
 
-
 const About1 = () => {
   return (
     <>
-      <section className="overflow-hidden pt-20 px-20 pb-12 lg:pt-[120px] lg:pb-[90px] bg-[#f7f7f7]" id="aboutUs">
+      <section
+        className="overflow-hidden pt-20 px-20 pb-12 lg:pt-[120px] lg:pb-[90px] bg-[#f7f7f7]"
+        id="aboutUs"
+      >
         <div className="container mx-auto">
           <div className="flex flex-wrap items-center justify-between -mx-4">
             <div className="w-1/2 px-4 lg:w-6/12">
               <div className="flex items-center -mx-3 sm:-mx-4">
-                <div className="w-full px-3 sm:px-4 xl:w-1/2">
-                  <div className="py-3 sm:py-4">
+                <div className="w-full px-3 sm:px-2 xl:w-1/2">
+                  <div className="py-3 z-10 sm:py-4">
                     <img
                       src="https://i.ibb.co/gFb3ns6/image-1.jpg"
                       alt=""
-                      className="w-full rounded-2xl"
+                      className="shadow w-full rounded-2xl"
                     />
                   </div>
-                  <div className="py-3 sm:py-4">
+                  <div className="py-3 z-10 sm:py-4">
                     <img
                       src="https://i.ibb.co/rfHFq15/image-2.jpg"
                       alt=""
-                      className="w-full rounded-2xl"
+                      className="shadow w-full rounded-2xl"
                     />
                   </div>
                 </div>
@@ -32,7 +34,7 @@ const About1 = () => {
                     <img
                       src="https://i.ibb.co/9y7nYCD/image-3.jpg"
                       alt=""
-                      className="w-full rounded-2xl"
+                      className="shadow w-full rounded-2xl"
                     />
                     <Bubble />
                   </div>
@@ -54,7 +56,7 @@ const About1 = () => {
                   emerge probabilistically. These individual elements intertwine
                   to create a highly intricate structure.
                 </p>
-                
+
                 <a
                   href="#"
                   className="inline-flex items-center bg-[#cc9d00] justify-center py-3 text-base font-medium text-center text-white border border-transparent rounded-md px-7 bg-primary hover:bg-opacity-90"
@@ -66,7 +68,6 @@ const About1 = () => {
           </div>
         </div>
       </section>
-      
     </>
   );
 };

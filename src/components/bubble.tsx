@@ -4,7 +4,7 @@ import React from "react";
 
 const Bubble: React.FC = () => {
   return (
-    <span className="absolute -right-7 -bottom-7 z-[-1]">
+    <span className="absolute sm:hidden -right-7 -bottom-7 z-[-1]">
       <svg
         width={134}
         height={106}

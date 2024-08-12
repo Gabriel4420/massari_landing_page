@@ -1,30 +1,35 @@
 import React from "react";
-import { ChartLine, Code, PiggyBank, QuestionMark, SketchLogo } from "@phosphor-icons/react/dist/ssr";
-
+import {
+  ChartLine,
+  Code,
+  PiggyBank,
+  QuestionMark,
+  SketchLogo,
+} from "@phosphor-icons/react/dist/ssr";
 
 const ServiceCard = ({ icon, title, details }: any) => {
-    return (
-      <>
-        <div className="w-full h-full flex items-stretch">
-          <div className="mb-5 rounded-[20px] bg-white p-10 shadow-2 hover:shadow-lg dark:bg-dark-2 md:px-7 xl:px-10">
-            <div className="mb-4 flex items-center justify-center ">
-              {icon}
-            </div>
-            <h4 className="mb-[14px] text-2xl font-semibold text-dark dark:text-white">
-              {title}
-            </h4>
-            <p className="text-body-color dark:text-dark-6">{details}</p>
-          </div>
+  return (
+    <>
+      <div className="w-full h-full flex items-stretch">
+        <div className="mb-5 rounded-[20px] bg-white p-10 shadow-2 hover:shadow-lg dark:bg-dark-2 md:px-7 xl:px-10">
+          <div className="mb-4 flex items-center justify-center ">{icon}</div>
+          <h4 className="mb-[14px] text-2xl font-semibold text-dark dark:text-white">
+            {title}
+          </h4>
+          <p className="text-body-color dark:text-dark-6">{details}</p>
         </div>
-      </>
-    );
-  };
+      </div>
+    </>
+  );
+};
 
 const SignalsPanel: React.FC = () => {
   return (
-    <div className="overflow-hidden text-base h-screen bg-[#cc9d00] text-gray-800 w-full pl-3 pr-10 py-10 ">
-        <h2 className="text-3xl font-bold mt-10 text-white text-center">About Our Job</h2>
-      <div className="mx-4 grid grid-cols-4 text-center py-10 gap-2 w-full flex-wrap">
+    <div className="lg:overflow-hidden text-base h-full bg-[#ffc501] text-gray-800 w-full pl-3 pr-10 py-10 ">
+      <h2 className="text-3xl font-bold mt-10 text-white text-center">
+        About Our Job
+      </h2>
+      <div className="mx-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 text-center py-10 gap-2 w-full flex-wrap">
         <ServiceCard
           title="Signals"
           details="Massari developed an algorithm analyzing 25 years of US Stocks data at 5-minute intervals, identifying statistically significant patterns, or 'signals'"
