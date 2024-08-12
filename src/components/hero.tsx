@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
           <span className="block xl:inline capitalize">
             A Hedge fund that uses a proprietary algorithm for
           </span>
-          &apos;&apos;
+          &nbsp;
           <span className="block text-white xl:inline">Trading Decisions</span>
         </h1>
 
