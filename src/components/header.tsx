@@ -51,9 +51,10 @@ const Header: React.FC = () => {
           <div className="flex justify-between w-full">
             <div className="flex-shrink-0">
               <img
-                className="h-20 w-52"
+                className="h-52 w-full object-cover"
                 src="/logo massari systems.png"
                 alt="logo"
+                style={{ height: "100px" }}
               />
             </div>
             <div className="hidden sm:mr-6 sm:flex sm:space-x-8">
