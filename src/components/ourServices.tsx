@@ -12,9 +12,9 @@ const OurServices: React.FC = () => {
             <CaretDoubleRight className="mr-2" size={32} /> Signal-Based Intel
           </h2>
           <p className="mb-4">
-            Our Artificial Intelligence is trained on strategy tatistically
-            significant trading signals, or microscopic patterns that have
-            repeated consistently over time.
+            Our Artificial Intelligence is trained on statistically significant
+            trading signals, or microscopic patterns that have repeated
+            consistently over time.
           </p>
           <h2 className="mb-4 flex text-2xl tracking-tight font-extrabold text-gray-900 dark:text-white">
             <CaretDoubleRight className="mr-2" size={32} /> Compute intensive
@@ -22,9 +22,9 @@ const OurServices: React.FC = () => {
           </h2>
           <p>
             The signal research process is a comprehensive, multi-day journey,
-            powered by state-of-the-art NVIDIA GPU&apos; Strategys. It
-            rigorously tests over 2 billion pattern combinations, ensuring that
-            only the most effective and reliable signals are selected.
+            powered by state-of-the-art NVIDIA GPU&apos;s. It rigorously tests
+            over 2 billion pattern combinations, ensuring that only the most
+            effective and reliable signals are selected.
           </p>
         </div>
         <div className="grid grid-cols-2 gap-4 mt-8">
