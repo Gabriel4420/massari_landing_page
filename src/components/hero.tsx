@@ -23,12 +23,12 @@ const Hero: React.FC = () => {
           </span>
         </h1>
 
-        <h1 className="text-3xl lg:hidden drop-shadow-lg  md:hidden text-center font-normal tracking-tight text-gray-900 md:text-6xl">
+        <h1 className="text-3xl -mt-16 md:hidden lg:hidden drop-shadow-lg  md:hidden text-center font-normal tracking-tight text-gray-900 md:text-6xl">
           <span className="xl:inline capitalize">
             A Hedge fund that uses a proprietary algorithm for
           </span>
           &nbsp;
-          <span className=" text-black inline drop-shadow-lg">
+          <span className=" text-white inline drop-shadow-lg">
             Trading Decisions
           </span>
         </h1>
