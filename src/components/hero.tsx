@@ -5,13 +5,7 @@ import React from "react";
 const Hero: React.FC = () => {
   //bg-[#ffc501]
   return (
-    <div
-      className="bg-center bg-cover to-slate-400  h-1/2 lg:h-screen  bg-white bg-contain bg-no-repeat py-12"
-      style={{
-        backgroundImage:
-          'linear-gradient(to top, transparent 0%, #ffc501 90%), url("/background-3.png")',
-      }}
-    >
+    <div className="bg-center bg-cover to-slate-400  h-1/2 lg:h-screen  bg-[#ffc501] bg-no-repeat py-12">
       <div className="max-w-7xl mx-auto py-20 mt-20 px-4  sm:py-16 sm:px-3 lg:px-8 lg:flex lg:flex-col lg:items-center lg:justify-between">
         <h1 className="text-xl hidden lg:block md:block lg:text-6xl text-center font-normal tracking-tight text-gray-900 md:text-6xl drop-shadow-lg">
           <span className="block xl:inline capitalize">
