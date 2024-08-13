@@ -7,7 +7,7 @@ import SignalsPanel from "@/components/signalsPanel";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Head>
         <title>Massari Systems</title>
         <meta
@@ -22,8 +22,8 @@ export default function Home() {
         {/* Adicionar outros componentes conforme necessário */}
         <OurServices />
         <About1 />
-        <SignalsPanel/>
+        <SignalsPanel />
       </main>
-    </div>
+    </>
   );
 }
