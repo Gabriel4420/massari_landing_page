@@ -7,7 +7,7 @@ const About1 = () => {
     <>
       <section
         className="overflow-hidden pt-20 px-20 pb-12 lg:pt-[120px] lg:pb-[90px] bg-[#f7f7f7]"
-        id="aboutUs"
+        
       >
         <div className="container mx-auto">
           <div className="flex flex-wrap items-center justify-between -mx-10 md:-mx-4 lg:-mx-4">
@@ -44,9 +44,9 @@ const About1 = () => {
 
             <div className="w-full flex justify-center items-center lg:px-4 lg:w-1/2 xl:w-5/12">
               <div className="mt-10 lg:mt-0">
-                <span className="block mb-4 text-lg font-semibold text-[#cc9d00]">
+                {/*  <span className="block mb-4 text-lg font-semibold text-[#cc9d00]">
                   About us
-                </span>
+                </span> */}
                 <h2 className="mb-5 text-3xl font-bold text-[#000] sm:text-[40px]/[48px]">
                   How We See The Market
                 </h2>
@@ -59,7 +59,7 @@ const About1 = () => {
 
                 <a
                   href="#"
-                  className="inline-flex items-center bg-[#cc9d00] justify-center py-3 text-base font-medium text-center text-white border border-transparent rounded-md px-7 bg-primary hover:bg-opacity-90"
+                  className="inline-flex items-center bg-[#ffc501] justify-center py-3 text-base font-medium text-center text-white border border-transparent rounded-md px-7 bg-primary hover:bg-opacity-90"
                 >
                   Get Started
                 </a>

@@ -11,7 +11,7 @@ const ServiceCard = ({ icon, title, details }: any) => {
   return (
     <>
       <div className="w-full h-full flex items-stretch">
-        <div className="mb-5 rounded-[20px] bg-white p-10 shadow-2 hover:shadow-lg dark:bg-dark-2 md:px-7 xl:px-10">
+        <div className="mb-5 flex flex-col items-center justify-center rounded-[20px] bg-white p-10 shadow-2 hover:shadow-lg dark:bg-dark-2 md:px-7 xl:px-10">
           <div className="mb-4 flex items-center justify-center ">{icon}</div>
           <h4 className="mb-[14px] text-2xl font-semibold text-dark dark:text-white">
             {title}
@@ -25,11 +25,14 @@ const ServiceCard = ({ icon, title, details }: any) => {
 
 const SignalsPanel: React.FC = () => {
   return (
-    <div className="lg:overflow-hidden text-base h-full bg-[#ffc501] text-gray-800 w-full pl-3 pr-10 py-10 ">
+    <div
+      className="lg:overflow-hidden text-base h-full bg-[#ffc501] text-gray-800 w-full pl-3 pr-10 py-10 "
+      id="aboutUs"
+    >
       <h2 className="text-3xl font-bold mt-10 text-white text-center">
-        About Our Job
+        About Us
       </h2>
-      <div className="mx-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 text-center py-10 gap-2 w-full flex-wrap">
+      <div className="mx-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 text-center py-10 gap-2 w-full flex-wrap">
         <ServiceCard
           title="Signals"
           details="Massari developed an algorithm analyzing 25 years of US Stocks data at 5-minute intervals, identifying statistically significant patterns, or 'signals'"
@@ -47,7 +50,7 @@ const SignalsPanel: React.FC = () => {
         />
         <ServiceCard
           title="Billions of signals"
-          details="Our system is ready to search for multiple billions of signals, but we cant afford it. Preliminary tests show very promising  signs"
+          details="Our system is ready to search for multiple billions of signals. Preliminary tests show very promising  signs"
           icon={<SketchLogo className="text-[#cc9d00]" size={40} />}
         />
         <ServiceCard

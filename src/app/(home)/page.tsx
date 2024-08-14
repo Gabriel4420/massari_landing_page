@@ -24,8 +24,9 @@ export default function Home() {
         <Hero />
         {/* Adicionar outros componentes conforme necessário */}
         <OurServices />
-        <About1 />
+
         <SignalsPanel />
+        <About1 />
         <RegularFractalSlider />
       </main>
     </>
