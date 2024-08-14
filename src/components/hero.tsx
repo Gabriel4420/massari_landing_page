@@ -6,7 +6,7 @@ const Hero: React.FC = () => {
   //bg-[#ffc501]
   return (
     <div className="bg-center bg-cover to-slate-400  h-1/2 bg-[#ffc501] bg-no-repeat py-5">
-      <div className="max-w-7xl mx-auto py-10 mt-40 px-4  sm:py-16 sm:px-3 lg:px-8 lg:flex lg:flex-col lg:items-center lg:justify-between">
+      <div className="max-w-7xl mx-auto py-10 mt-40 lg:mt-20 px-4  sm:py-16 sm:px-3 lg:px-8 lg:flex lg:flex-col lg:items-center lg:justify-between">
         <div className="flex flex-col items-center w-full justify-center">
           <h1 className="text-xl hidden lg:block md:block lg:text-6xl text-center font-normal tracking-tight text-gray-900 md:text-6xl drop-shadow-lg">
             <span className="block xl:inline capitalize">
