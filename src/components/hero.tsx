@@ -19,7 +19,7 @@ const Hero: React.FC = () => {
               </span>
             </h1>
 
-            <h1 className="text-3xl -mt-16 md:hidden lg:hidden drop-shadow-lg text-center font-normal tracking-tight text-gray-900 md:text-6xl">
+            <h1 className="text-3xl -mt-24 md:hidden lg:hidden drop-shadow-lg text-center font-normal tracking-tight text-gray-900 md:text-6xl">
               <span className="xl:inline capitalize">
                 A Hedge fund that uses a proprietary algorithm for
               </span>
@@ -48,7 +48,7 @@ const Hero: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="-mt-36 md:mt-0 lg:mt-0">
+          <div className="-mt-36 hidden lg:block md:hidden md:mt-0 lg:mt-0">
             <img
               src="/background-3.png"
               className="w-full h-full object-cover"
