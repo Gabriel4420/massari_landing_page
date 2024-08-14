@@ -1,13 +1,10 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import {
-  ChevronDoubleLeftIcon,
-  ChevronDoubleRightIcon,
-} from "@heroicons/react/20/solid";
 
 interface CarouselProps {
-  images: string[];
+  images?: string[];
+  children?: React.ReactNode;
 }
 
 const Carousel: React.FC<CarouselProps> = ({ images }) => {
@@ -19,20 +16,20 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
 
   const handlePrev = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+      prevIndex === 0 ? images!.length - 1 : prevIndex - 1
     );
   };
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      prevIndex === images!.length - 1 ? 0 : prevIndex + 1
     );
   };
 
   return (
     <div className="relative w-full h-64 overflow-hidden">
       <img
-        src={images[currentIndex]}
+        src={images![currentIndex]}
         alt="Carrossel"
         className="w-full h-full object-contain cursor-pointer"
         onClick={openModal}
@@ -53,7 +50,7 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
       {isModalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
           <img
-            src={images[currentIndex]}
+            src={images![currentIndex]}
             alt="Zoomed"
             className="max-w-full max-h-full h-[500px] w-full object-contain"
             onClick={closeModal}
