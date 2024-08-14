@@ -4,6 +4,7 @@ import Head from "next/head";
 import OurServices from "@/components/ourServices";
 import About1 from "@/components/aboutUs";
 import SignalsPanel from "@/components/signalsPanel";
+import { RegularFractalSlider } from "@/components/regularFractalSlider";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
         <OurServices />
         <About1 />
         <SignalsPanel />
+        <RegularFractalSlider />
       </main>
     </>
   );
