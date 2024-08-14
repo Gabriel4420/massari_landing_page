@@ -5,6 +5,7 @@ import OurServices from "@/components/ourServices";
 import About1 from "@/components/aboutUs";
 import SignalsPanel from "@/components/signalsPanel";
 import { RegularFractalSlider } from "@/components/regularFractalSlider";
+import Strategy from "@/components/strategy";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
         <SignalsPanel />
         <About1 />
         <RegularFractalSlider />
+        <Strategy />
       </main>
     </>
   );
