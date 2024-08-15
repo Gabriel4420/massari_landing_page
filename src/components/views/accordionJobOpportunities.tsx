@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { UsersThree } from "@phosphor-icons/react";
 
 interface JobOpportunity {
   title: string;
@@ -22,7 +21,11 @@ const AccordionJobOpportunities: React.FC<JobOpportunitiesProps> = ({
   const toggleAccordion = (index: number) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
-
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+  
   return (
     <div className="bg-[#ffc501] text-white pb-28 pt-20 px-8 md:px-16 rounded-lg shadow-lg">
       <h2 className="text-4xl font-bold mb-12 text-center">Join Our Team</h2>
@@ -32,10 +35,7 @@ const AccordionJobOpportunities: React.FC<JobOpportunitiesProps> = ({
         </div>
         <div className="w-1/2">
           {opportunities.map((opportunity, index) => {
-            const [ref, inView] = useInView({
-              triggerOnce: true,
-              threshold: 0.2,
-            });
+            
 
             return (
               <motion.div
