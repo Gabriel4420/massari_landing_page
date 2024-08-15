@@ -25,18 +25,23 @@ const AccordionJobOpportunities: React.FC<JobOpportunitiesProps> = ({
     triggerOnce: true,
     threshold: 0.2,
   });
-  
-  return (
-    <div className="bg-[#ffc501] text-white pb-28 pt-20 px-8 md:px-16 rounded-lg shadow-lg" id="joinus">
-      <h2 className="text-4xl font-bold mb-12 text-center">Join Our Team</h2>
-      <div className="flex items-center justify-center">
-        <div className="w-1/2 flex items-center justify-center text-center">
-          <img src="/logo massari systems.png" alt="logo"/>
-        </div>
-        <div className="w-1/2">
-          {opportunities.map((opportunity, index) => {
-            
 
+  return (
+    <div
+      className="bg-[#ffc501] text-white pb-28 pt-20 px-8 md:px-16 rounded-lg shadow-lg"
+      id="joinus"
+    >
+      <h2 className="text-4xl font-bold mb-12 text-center">Join Our Team</h2>
+      <div className="flex flex-col md:flex-row lg:flex-row items-center justify-center">
+        <div className="w-1/2 h-full pb-20 flex items-center justify-center text-center">
+          <img
+            src="/logo massari systems.png"
+            className="w-full h-full my-20 object-contain"
+            alt="logo"
+          />
+        </div>
+        <div className="md:w-1/2 lg:w-1/2 w-full mt-16 lg:mt-0">
+          {opportunities.map((opportunity, index) => {
             return (
               <motion.div
                 ref={ref}
@@ -44,7 +49,7 @@ const AccordionJobOpportunities: React.FC<JobOpportunitiesProps> = ({
                 initial={{ opacity: 0, y: 50 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.8, ease: "easeOut" }}
-                className="mb-4"
+                className="mb-4 mt-4"
               >
                 <div
                   className="cursor-pointer bg-[#cc9d00] p-4 rounded-lg shadow-md"

@@ -28,15 +28,20 @@ const Carousel: React.FC<CarouselProps> = ({ items }) => {
   return (
     <div className="relative w-full">
       <FlowbiteCarousel
-        slideInterval={3000} indicators={true} leftControl={<ChevronLeftIcon className="w-10 h-10 hover:bg-[#feca19] hover:rounded-full hover:text-white" />} rightControl=
-        {<ChevronRightIcon className="w-10 h-10 hover:bg-[#feca19] hover:rounded-full hover:text-white" />}
+        slideInterval={3000}
+        indicators={true}
+        leftControl={
+          <ChevronLeftIcon className="w-10 h-10 text-yellow-500 hover:bg-[#feca19] hover:rounded-full hover:text-white" />
+        }
+        rightControl={
+          <ChevronRightIcon className="w-10 h-10 text-yellow-500 hover:bg-[#feca19] hover:rounded-full hover:text-white" />
+        }
         onSlideChange={setCurrentSlide}
-        className="relative h-[500px] w-full"
+        className="relative lg:h-[500px] h-[600px] w-full"
       >
         {items.map((item, index) => (
           <div className="flex justify-center items-center h-full" key={index}>
             <Card
-              
               imageUrl={item.image}
               altImageText={item.title}
               title={item.title}
@@ -45,7 +50,6 @@ const Carousel: React.FC<CarouselProps> = ({ items }) => {
           </div>
         ))}
       </FlowbiteCarousel>
-     
     </div>
   );
 };
