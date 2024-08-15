@@ -11,10 +11,12 @@ const Header: React.FC = () => {
 
   const menuItems = [
     { name: "Home", href: "#" },
-    { name: "About", href: "#aboutUs" },
-    { name: "Strategy", href: "#" },
+    { name: "About Us", href: "#aboutUs" },
+    { name: "Strategy", href: "#strategy" },
+    { name: "Market View", href: "#marketview" },
     { name: "Books", href: "#" },
     { name: "Join Us", href: "#" },
+    { name: "Contact Us", href: "#" },
   ];
 
   const handleMenuItemClick = (item: string) => {
