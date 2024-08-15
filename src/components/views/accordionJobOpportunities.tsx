@@ -27,7 +27,7 @@ const AccordionJobOpportunities: React.FC<JobOpportunitiesProps> = ({
   });
   
   return (
-    <div className="bg-[#ffc501] text-white pb-28 pt-20 px-8 md:px-16 rounded-lg shadow-lg">
+    <div className="bg-[#ffc501] text-white pb-28 pt-20 px-8 md:px-16 rounded-lg shadow-lg" id="joinus">
       <h2 className="text-4xl font-bold mb-12 text-center">Join Our Team</h2>
       <div className="flex items-center justify-center">
         <div className="w-1/2 flex items-center justify-center text-center">

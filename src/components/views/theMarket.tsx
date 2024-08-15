@@ -7,7 +7,7 @@ const TheMarket = () => {
     <>
       <section
         className="overflow-hidden pt-20 px-20 pb-12 lg:pt-[120px] lg:pb-[90px] bg-[#f7f7f7]"
-        
+        id="marketview"
       >
         <div className="container mx-auto">
           <div className="flex flex-wrap items-center justify-between -mx-10 md:-mx-4 lg:-mx-4">

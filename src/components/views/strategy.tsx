@@ -18,7 +18,7 @@ export default function Strategy() {
   const [ref4, inView4] = useInView({ triggerOnce: false, threshold: 0.2 });
 
   return (
-    <div className="container mx-auto  py-28 px-4 md:px-8 lg:px-16">
+    <div className="container mx-auto  py-28 px-4 md:px-8 lg:px-16" id="strategy">
       {/* Dobra 1 */}
       <motion.section
         ref={ref1}

@@ -14,9 +14,9 @@ const Header: React.FC = () => {
     { name: "About Us", href: "#aboutUs" },
     { name: "Strategy", href: "#strategy" },
     { name: "Market View", href: "#marketview" },
-    { name: "Books", href: "#" },
-    { name: "Join Us", href: "#" },
-    { name: "Contact Us", href: "#" },
+    { name: "Books", href: "#books" },
+    { name: "Join Us", href: "#joinus" },
+    { name: "Contact Us", href: "#contact" },
   ];
 
   const handleMenuItemClick = (item: string) => {
