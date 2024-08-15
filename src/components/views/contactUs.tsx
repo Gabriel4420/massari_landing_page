@@ -17,7 +17,7 @@ const ContactUs: React.FC = () => {
             Get in Touch
           </h2>
           <p className="text-lg mb-6">
-            Have questions or need help? Contact us via the form or through our support channels. We're here to help you!
+            Have questions or need help? Contact us via the form or through our support channels. We&apos;re here to help you!
           </p>
           <p className="text-lg">
             Email us at <a href="mailto:contact@massarisystems.com" className="text-blue-200 underline">contact@massarisystems.com</a>

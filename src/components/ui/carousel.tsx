@@ -34,9 +34,9 @@ const Carousel: React.FC<CarouselProps> = ({ items }) => {
         className="relative h-[500px] w-full"
       >
         {items.map((item, index) => (
-          <div className="flex justify-center items-center h-full">
+          <div className="flex justify-center items-center h-full" key={index}>
             <Card
-              key={index}
+              
               imageUrl={item.image}
               altImageText={item.title}
               title={item.title}
