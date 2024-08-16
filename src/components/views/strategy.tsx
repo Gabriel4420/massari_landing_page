@@ -31,7 +31,7 @@ export default function Strategy() {
           <img
             src="/signal-based-intel.png"
             alt="Dobra 1"
-            className="rounded-xl shadow-lg transform transition duration-500 hover:scale-105 h-[400px] w-[600px]"
+            className="rounded-xl shadow-lg transform transition duration-500 hover:scale-105 h-full w-full object-cover"
           />
         </div>
         <div className="md:w-1/2 md:pl-16 text-center md:text-left">
@@ -64,8 +64,7 @@ export default function Strategy() {
           <img
             src="/graph-moving-average.png"
             alt="Dobra 2"
-            className="rounded-xl shadow-lg transform transition duration-500 hover:scale-105 h-[400px] w-[600px]"
-          />
+            className="rounded-xl shadow-lg transform transition duration-500 hover:scale-105 h-full w-full object-cover"/>
         </div>
       </motion.section>
 
@@ -81,7 +80,7 @@ export default function Strategy() {
           <img
             src="/signals-are-filters.png"
             alt="Dobra 3"
-            className="rounded-xl shadow-lg transform transition duration-500 hover:scale-105"
+            className="rounded-xl shadow-lg transform transition duration-500 hover:scale-105 h-full w-full object-cover"
           />
         </div>
         <div className="md:w-1/2 md:pl-16 text-center md:text-left">
@@ -106,8 +105,8 @@ export default function Strategy() {
           <h2 className="text-4xl font-bold mb-6 leading-tight text-gray-900">
            Signals Quality Control
           </h2>
-          <span className="text-sm font-bold text-gray-700 mb-4">Strong statistical evidence.</span>
-          <p className="text-lg text-gray-700 mb-4">
+          <span className="text-2xl font-bold text-gray-700 mb-4">Strong statistical evidence.</span>
+          <p className="text-md text-gray-700 my-4">
              Patterns&#47;Signals with p-values below 0.01 are added to the model
           </p>
         </div>

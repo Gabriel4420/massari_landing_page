@@ -21,12 +21,12 @@ const ContactUs: React.FC = () => {
             Have questions or need help? Contact us via the form or through our support channels. We&apos;re here to help you!
           </p>
           <p className="text-lg">
-            Email us at <a href="mailto:contact@massarisystems.com" className="text-blue-200 underline">contact@massarisystems.com</a>
+            Email us at <a href="mailto:contact@massarisystems.com" className="text-[#ffc501] underline">contact@massarisystems.com</a>
           </p>
         </div>
 
         {/* Formulário de Contato */}
-        <div className="md:w-1/2 bg-white p-8 rounded-lg shadow-lg text-blue-600">
+        <div className="md:w-1/2 bg-white p-8 rounded-lg shadow-lg text-[#ffc501]">
           <form action="#">
             <div className="mb-4">
               <label htmlFor="name" className="block text-sm font-medium mb-2">Name</label>
@@ -34,7 +34,7 @@ const ContactUs: React.FC = () => {
                 type="text"
                 id="name"
                 name="name"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#ffc501]"
                 required
               />
             </div>
@@ -44,7 +44,7 @@ const ContactUs: React.FC = () => {
                 type="email"
                 id="email"
                 name="email"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#ffc501]"
                 required
               />
             </div>
@@ -54,13 +54,13 @@ const ContactUs: React.FC = () => {
                 id="message"
                 name="message"
                 rows={4}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#ffc501]"
                 required
               ></textarea>
             </div>
             <button
               type="submit"
-              className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300"
+              className="w-full bg-[#ffc501] text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300"
             >
               Send Message
             </button>
