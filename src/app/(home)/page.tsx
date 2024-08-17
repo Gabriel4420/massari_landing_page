@@ -41,7 +41,6 @@ export default function Home() {
           name="description"
           content="Financial solutions for your business"
         />
-        <meta name="theme-color" content="#ffc501" />
       
         <link rel="icon" href="/favicon.ico" />
       </Head>

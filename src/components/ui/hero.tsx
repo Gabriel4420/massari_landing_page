@@ -1,5 +1,6 @@
 // components/Hero.tsx
 import { Coffee, Lightning } from "@phosphor-icons/react/dist/ssr";
+import Link from "next/link";
 import React from "react";
 
 const Hero: React.FC = () => {
@@ -30,12 +31,13 @@ const Hero: React.FC = () => {
 
           <div className="mt-8 flex items-center justify-center lg:py-28 lg:mt-0 lg:flex-shrink-0">
             <div className="inline-flex rounded-md shadow">
-              <a
-                href="#"
+              <Link
+                href="#contact"
+                as="#contact"
                 className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-[#cc9d00] hover:bg-[#b28900]"
               >
                 <Coffee size={22} className="mr-5" /> Let&apos;s Talk
-              </a>
+              </Link>
             </div>
             <div className="ml-3 inline-flex rounded-md shadow">
               <a

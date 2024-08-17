@@ -7,7 +7,7 @@ import ContactForm from "../ui/formContact";
 const ContactUs: React.FC = () => {
   return (
     <motion.section
-      className="bg-white text-gray-800 py-24 px-8 md:px-16 rounded-lg shadow-lg"
+      className="bg-[#f7f7f7] text-gray-800 py-24 px-8 md:px-16 rounded-lg shadow-lg"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}

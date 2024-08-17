@@ -23,7 +23,7 @@ export default function Card({
 
   return (
     <>
-      <div className="max-w-sm mx-auto bg-white rounded-xl shadow-md overflow-hidden transform transition-transform duration-500 hover:scale-105 hover:shadow-xl">
+      <div className="max-w-full mx-auto bg-white rounded-xl shadow-md overflow-hidden transform transition-transform duration-500 hover:scale-105 hover:shadow-xl">
         <div className="relative cursor-pointer" onClick={openModal}>
           <img
             src={imageUrl}

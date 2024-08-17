@@ -28,7 +28,7 @@ const AccordionJobOpportunities: React.FC<JobOpportunitiesProps> = ({
 
   return (
     <div
-      className="bg-[#ffc501] text-white pb-28 pt-20 px-8 md:px-16 rounded-lg shadow-lg"
+      className="bg-white text-[#ffc501] pb-28 pt-20 px-8 md:px-16 rounded-lg shadow-lg"
       id="joinus"
     >
       <h2 className="text-4xl font-bold mb-12 text-center">Join Our Team</h2>
@@ -52,10 +52,10 @@ const AccordionJobOpportunities: React.FC<JobOpportunitiesProps> = ({
                 className="mb-4 mt-0"
               >
                 <div
-                  className="cursor-pointer bg-[#cc9d00] p-4 rounded-lg shadow-md"
+                  className="cursor-pointer bg-[#ffc501] p-4 rounded-lg shadow-md"
                   onClick={() => toggleAccordion(index)}
                 >
-                  <h3 className="text-xl font-semibold">{opportunity.title}</h3>
+                  <h3 className="text-xl text-black font-semibold">{opportunity.title}</h3>
                 </div>
                 <div
                   className={`overflow-hidden transition-all duration-300 ease-in-out ${
