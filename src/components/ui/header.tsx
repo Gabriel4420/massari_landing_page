@@ -83,7 +83,7 @@ const Header: React.FC = () => {
           <div className="-mr-2 flex items-center sm:hidden">
             <button
               onClick={toggleMenu}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-[#cc9d00] focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+              className="headerToggleMenuButtonStyleConfig"
             >
               <span className="sr-only">Open main menu</span>
               {isOpen ? (

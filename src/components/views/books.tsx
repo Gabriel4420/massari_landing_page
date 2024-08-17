@@ -31,7 +31,7 @@ export const Books = () => {
   ];
 
   return (
-    <div className="flex bg-white h-screen py-5  flex-col items-center justify-center mx-auto" id="books">
+    <div className="flex bg-white h-full py-5  flex-col items-center justify-center mx-auto" id="books">
       <h2 className="mb-10 capitalize text-3xl text-center font-bold text-[#000] sm:text-[40px]/[48px]">
       Books
       </h2>

@@ -1,6 +1,8 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import ContactForm from "../ui/formContact";
 
 const ContactUs: React.FC = () => {
   return (
@@ -21,18 +23,18 @@ const ContactUs: React.FC = () => {
           </p>
           <p className="text-lg">
             Email us at{" "}
-            <a
-              href="mailto:rafael.azevedo@massarisystems.com"
+            <Link
+              href="mailto:raphael.azevedo@massarisystems.com"
               className="text-[#ffc501] underline"
             >
-              rafael.azevedo@massarisystems.com
-            </a>
+              raphael.azevedo@massarisystems.com
+            </Link>
           </p>
         </div>
 
         {/* Formulário de Contato */}
         <div className="md:w-1/2 bg-white p-8 rounded-lg shadow-lg text-[#ffc501]">
-          <form action="#">
+          {/* <form action="#">
             <div className="mb-4">
               <label htmlFor="name" className="block text-sm font-medium mb-2">
                 Name
@@ -78,7 +80,8 @@ const ContactUs: React.FC = () => {
             >
               Send Message
             </button>
-          </form>
+          </form> */}
+          <ContactForm />
         </div>
       </div>
     </motion.section>

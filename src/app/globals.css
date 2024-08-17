@@ -1,3 +1,4 @@
+/* stylelint-disable no-invalid-position-at-import-rule */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -29,6 +30,21 @@ body {
   overflow-x: hidden !important;
 }
 
+.inputStyleConfig{
+  @apply mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#ffc501];
+}
+
+.labelStyleConfig{
+  @apply block text-sm font-medium text-gray-700;
+}
+
+.buttonSubmitStyleConfig{
+  @apply inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-[#ffc501] hover:bg-[#ffda60] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#ffc501];
+}
+
+.headerToggleMenuButtonStyleConfig{
+  @apply inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-[#cc9d00] focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500;
+}
 /* src/styles/custom-scrollbar.css */
 
 /* Estilos da barra de rolagem para navegadores baseados em WebKit */
