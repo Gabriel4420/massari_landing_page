@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-
+import { ActiveSectionProvider } from "@/contexts/ActiveSectionContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth focus:scroll-auto">
       <body className={` ${inter.className}`}>
-       {children}
+        <ActiveSectionProvider>{children}</ActiveSectionProvider>
       </body>
     </html>
   );

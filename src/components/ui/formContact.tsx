@@ -1,3 +1,4 @@
+'use client';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 
@@ -45,7 +46,7 @@ const ContactForm = () => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="max-w-md mx-auto p-4"
+      className="md:max-w-md lg:max-w-md max-w-full md:mx-auto md:p-4"
     >
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>

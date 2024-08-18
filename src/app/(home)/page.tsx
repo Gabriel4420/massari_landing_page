@@ -1,13 +1,10 @@
-import Hero from "@/components/ui/hero";
-import Header from "../../components/ui/header";
-import Head from "next/head";
-import OurServices from "@/components/views/ourServices";
-import TheMarket from "@/components/views/theMarket";
-import SignalsPanel from "@/components/views/signalsPanel";
-import { Books } from "@/components/views/books";
-import Strategy from "@/components/views/strategy";
-import AccordionJobOpportunities from "@/components/views/accordionJobOpportunities";
-import ContactUs from "@/components/views/contactUs";
+'use client';
+import Head from 'next/head'; 
+
+import {  Hero, Header } from '@/components/ui';
+import { FractalLandingPage, Strategy, TheMarket, Books, OurServices, SignalsPanel, AccordionJobOpportunities, ContactUs } from '@/components/views';
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 
 export default function Home() {
   const jobOpportunities = [
@@ -44,6 +41,7 @@ export default function Home() {
       
         <link rel="icon" href="/favicon.ico" />
       </Head>
+    
       <Header />
       <main className="min-h-screen bg-white ">
         <Hero />
@@ -53,6 +51,7 @@ export default function Home() {
         <SignalsPanel />
         <Strategy />
         <TheMarket />
+        <FractalLandingPage />
         <Books />
         <AccordionJobOpportunities opportunities={jobOpportunities} />
         <ContactUs />

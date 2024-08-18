@@ -1,4 +1,5 @@
 "use client";
+import { ActiveSectionContext } from "@/contexts/ActiveSectionContext";
 import { Bars3Icon, HomeModernIcon } from "@heroicons/react/16/solid";
 import { XMarkIcon } from "@heroicons/react/16/solid";
 import Link from "next/link";
@@ -9,9 +10,11 @@ const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [selectedItem, setSelectedItem] = useState<string>("");
 
+  const { activeSection  }  = React.useContext(ActiveSectionContext);
+
   const menuItems = [
-    { name: "Home", href: "#" },
-    { name: "About Us", href: "#aboutUs" },
+    { name: "Home", href: "#Home" },
+    { name: "About Us", href: "#AboutUs" },
     { name: "Strategy", href: "#strategy" },
     { name: "Market View", href: "#marketview" },
     { name: "Books", href: "#books" },
@@ -73,6 +76,10 @@ const Header: React.FC = () => {
                     isScrolled
                       ? "text-gray-900"
                       : "text-white hover:text-shadow"
+                  } ${
+                    activeSection === item.name
+                      ? "border-indigo-500 text-gray-900"
+                      : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700"
                   } inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"`}
                 >
                   {item.name}

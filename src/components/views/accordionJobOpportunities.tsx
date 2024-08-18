@@ -28,15 +28,15 @@ const AccordionJobOpportunities: React.FC<JobOpportunitiesProps> = ({
 
   return (
     <div
-      className="bg-white text-[#ffc501] pb-28 pt-20 px-8 md:px-16 rounded-lg shadow-lg"
+      className="bg-white text-black pb-28 pt-20 px-8 md:px-5 rounded-lg shadow-lg"
       id="joinus"
     >
       <h2 className="text-4xl font-bold mb-12 text-center">Join Our Team</h2>
       <div className="flex flex-col md:flex-row lg:flex-row items-center justify-center">
-        <div className="w-1/2 h-full mb-10 flex items-center justify-center text-center">
+        <div className="md:w-1/2 lg:w-1/2 w-full h-full mb-10 flex items-center justify-center text-center">
           <img
             src="/logo massari systems.png"
-            className="w-full h-full object-contain"
+            className="w-full h-full object-cover lg:object-contain"
             alt="logo"
           />
         </div>

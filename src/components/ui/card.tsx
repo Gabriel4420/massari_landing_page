@@ -46,7 +46,7 @@ export default function Card({
       </div>
 
       {/* Modal para Zoom */}
-      <Modal show={isOpen} onClose={closeModal} size="3xl">
+      <Modal show={isOpen} onClose={closeModal} size="sm">
         <Modal.Body>
           <img
             src={imageUrl}

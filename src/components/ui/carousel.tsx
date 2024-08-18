@@ -16,7 +16,7 @@ const Carousel: React.FC<CarouselProps> = ({ items }) => {
   const [currentSlide, setCurrentSlide] = useState<number>(0);
 
   return (
-    <div className="relative w-full h-full">
+    <div className="relative w-full h-full -mt-12 lg:mt-0 md:mt-0">
       <FlowbiteCarousel
         slide={!currentSlide}
         slideInterval={3000}

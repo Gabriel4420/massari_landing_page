@@ -1,6 +1,5 @@
 import React from "react";
 import Bubble from "../ui/bubble";
-import SignalsPanel from "./signalsPanel";
 
 const TheMarket = () => {
   return (
