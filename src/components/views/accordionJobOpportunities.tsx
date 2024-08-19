@@ -2,11 +2,12 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { JobApplicationModal } from "@/components/ui";
 
 interface JobOpportunity {
+  id: string;
   title: string;
   description: string;
-  link: string;
 }
 
 interface JobOpportunitiesProps {
@@ -17,6 +18,15 @@ const AccordionJobOpportunities: React.FC<JobOpportunitiesProps> = ({
   opportunities,
 }) => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
+  const [selectedJob, setSelectedJob] = useState<{
+    id: string;
+    title: string;
+    description: string;
+  } | null>(null);
+
+  const openModal = (job: JobOpportunity) => setSelectedJob(job);
+  const closeModal = () => setSelectedJob(null);
 
   const toggleAccordion = (index: number) => {
     setActiveIndex(activeIndex === index ? null : index);
@@ -55,7 +65,9 @@ const AccordionJobOpportunities: React.FC<JobOpportunitiesProps> = ({
                   className="cursor-pointer bg-[#ffc501] p-4 rounded-lg shadow-md"
                   onClick={() => toggleAccordion(index)}
                 >
-                  <h3 className="text-xl text-black font-semibold">{opportunity.title}</h3>
+                  <h3 className="text-xl text-black font-semibold">
+                    {opportunity.title}
+                  </h3>
                 </div>
                 <div
                   className={`overflow-hidden transition-all duration-300 ease-in-out ${
@@ -64,14 +76,23 @@ const AccordionJobOpportunities: React.FC<JobOpportunitiesProps> = ({
                 >
                   <div className="p-4 bg-[#cc9d00] rounded-b-lg">
                     <p className="mb-4">{opportunity.description}</p>
-                    <a
-                      href={opportunity.link}
-                      className="text-blue-600 bg-white py-2 px-4 rounded-lg shadow-lg hover:bg-gray-200 transition duration-300"
+                    <button
+                      onClick={() => openModal(opportunity)}
+                      className="mt-2 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                     >
                       View Details
-                    </a>
+                    </button>
                   </div>
                 </div>
+                {selectedJob && (
+                  <JobApplicationModal
+                    jobId={selectedJob.id}
+                    title={selectedJob.title}
+                    description={selectedJob.description}
+                    isOpen={!!selectedJob}
+                    onClose={closeModal}
+                  />
+                )}
               </motion.div>
             );
           })}

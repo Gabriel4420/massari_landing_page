@@ -30,7 +30,6 @@ const Carousel: React.FC<CarouselProps> = ({ items }) => {
         className="relative lg:h-[500px] h-[600px] w-full"
       >
         {items.map((item, index) => (
-          <>
             <div
               className="flex justify-center items-center h-full w-full"
               key={index}
@@ -42,8 +41,6 @@ const Carousel: React.FC<CarouselProps> = ({ items }) => {
                 description={item.description}
               />
             </div>
-            
-          </>
         ))}
       </FlowbiteCarousel>
       {/* Custom Indicators */}
