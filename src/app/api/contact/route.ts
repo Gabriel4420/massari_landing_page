@@ -25,9 +25,10 @@ export async function POST(
           pass: process.env.GMAIL_PASS,
         },
       });
-      const response = await transporter.sendMail({
-        from: process.env.GMAIL_USER,
-        to: body.email,
+
+       await transporter.sendMail({
+        from: body.email,
+        to: process.env.GMAIL_USER,
         subject: `New message from ${body.name}`,
         html: `<p style="text-align:center; font-size: 20px; font-weight: bold; margin-bottom: 20px; ">Name: ${body.name}</p><p style="text-align:center; font-size: 20px; font-weight: bold; margin-bottom: 20px; ">Email: ${body.email}</p><p style="text-align:center; font-size: 20px; font-weight: bold; margin-bottom: 20px; ">Message: ${body.message}</p>`,
       });
