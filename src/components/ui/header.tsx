@@ -13,8 +13,8 @@ const Header: React.FC = () => {
   const { activeSection  }  = React.useContext(ActiveSectionContext);
 
   const menuItems = [
-    { name: "Home", href: "#Home" },
-    { name: "About Us", href: "#AboutUs" },
+    { name: "Home", href: "#home" },
+    { name: "About Us", href: "#aboutus" },
     { name: "Strategy", href: "#strategy" },
     { name: "Market View", href: "#marketview" },
     { name: "Books", href: "#books" },
@@ -45,6 +45,7 @@ const Header: React.FC = () => {
     };
   }, []);
 
+
   return (
     <header
       className={`fixed w-full z-20 transition-colors  duration-300 ${
@@ -63,7 +64,10 @@ const Header: React.FC = () => {
               />
             </div>
             <div className="hidden sm:mr-6 sm:flex sm:space-x-8">
-              {menuItems.map((item) => (
+              {menuItems.map((item) =>  { 
+                const processedItemName = item.name?.toLocaleLowerCase().replace(/\s+/g, '') || '';
+                
+                return (
                 <Link
                   key={item.name}
                   href={item.href}
@@ -73,18 +77,13 @@ const Header: React.FC = () => {
                       ? "border-indigo-500 text-gray-900"
                       : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700"
                   } ${
-                    isScrolled
-                      ? "text-gray-900"
-                      : "text-white hover:text-shadow"
-                  } ${
-                    activeSection === item.name
-                      ? "border-indigo-500 text-gray-900"
-                      : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                    isScrolled ? "text-gray-900" : activeSection === processedItemName ? "border-indigo-500 text-gray-900" : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                       
                   } inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"`}
                 >
                   {item.name}
                 </Link>
-              ))}
+              )})}
             </div>
           </div>
           <div className="-mr-2 flex items-center sm:hidden">

@@ -25,7 +25,7 @@ const ServiceCard = ({ icon, title, details }: any) => {
 
 const SignalsPanel: React.FC = () => {
   return (
-    <div
+    <section
       className="lg:overflow-hidden text-base h-full bg-[#ffc501] text-gray-800 w-full pl-3 pr-10 py-10 "
       id="aboutUs"
     >
@@ -59,7 +59,7 @@ const SignalsPanel: React.FC = () => {
           icon={<PiggyBank className="text-[#cc9d00]" size={40} />}
         />
       </div>
-    </div>
+    </section>
   );
 };
 

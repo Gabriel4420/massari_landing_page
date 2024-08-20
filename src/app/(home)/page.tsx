@@ -1,7 +1,7 @@
 "use client";
 import Head from "next/head";
 
-import { Hero, Header } from "@/components/ui";
+import { Hero, Header, Footer, CookieConsentToast } from "@/components/ui";
 import {
   FractalLandingPage,
   Strategy,
@@ -48,6 +48,7 @@ export default function Home() {
 
   return (
     <>
+      <CookieConsentToast />
       <Head>
         <title>Massari Systems</title>
         <meta
@@ -57,7 +58,7 @@ export default function Home() {
 
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <ToastContainer />
+
       <Header />
       <main className="min-h-screen bg-white ">
         <Hero />
@@ -71,6 +72,7 @@ export default function Home() {
         <Books />
         <AccordionJobOpportunities opportunities={jobOpportunities} />
         <ContactUs />
+        <Footer />
       </main>
     </>
   );

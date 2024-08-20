@@ -52,8 +52,8 @@ const FractalLandingPage = () => {
         className="text-center mb-12"
         ref={sectionRef}
       >
-        <h1 className="text-4xl font-bold mb-6">Understanding Fractals: Regular vs Irregular</h1>
-        <p className="text-lg text-gray-600">
+        <h1 className="text-4xl font-bold mb-6 text-gray-800">Understanding Fractals: Regular vs Irregular</h1>
+        <p className="text-lg text-gray-800">
           Explore the world of fractals and their practical applications in market analysis.
         </p>
       </motion.section>
@@ -105,13 +105,13 @@ const FractalLandingPage = () => {
       >
         <div className="p-6 bg-white rounded-lg shadow-lg">
           <h2 className="text-2xl font-bold mb-4">Regular Fractals</h2>
-          <p className="text-gray-600">
+          <p className="text-gray-800">
             Regular fractals are self-similar patterns that repeat at different scales. Learn how these patterns can be used to predict market trends.
           </p>
         </div>
         <div className="p-6 bg-white rounded-lg shadow-lg">
           <h2 className="text-2xl font-bold mb-4">Irregular Fractals</h2>
-          <p className="text-gray-600">
+          <p className="text-gray-800">
             Irregular fractals, while less predictable, reveal complex behaviors in markets. Discover their role in identifying market anomalies.
           </p>
         </div>

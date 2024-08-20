@@ -31,12 +31,12 @@ const Books = () => {
   ];
 
   return (
-    <div className="flex bg-[#ffc501] h-full py-12  flex-col items-center justify-center mx-auto" id="books">
+    <section className="flex bg-[#ffc501] h-full py-12  flex-col items-center justify-center mx-auto" id="books">
       <h2 className="lg:mb-10 capitalize text-3xl text-center font-bold text-[#000] sm:text-[40px]/[48px]">
       Books
       </h2>
       <Carousel items={items} />
-    </div>
+    </section>
   );
 };
 
