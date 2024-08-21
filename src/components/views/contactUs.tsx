@@ -7,15 +7,15 @@ import ContactForm from "../ui/formContact";
 const ContactUs: React.FC = () => {
   return (
     <motion.section
-      className="bg-[#f7f7f7] text-gray-800 py-24 px-8 md:px-16 rounded-lg shadow-lg"
+      className="bg-[#ffc501] text-white py-24 px-8 md:px-16 rounded-lg shadow-lg"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
       id="contact"
     >
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center">
         {/* Texto e Título */}
-        <div className="md:w-1/2 mb-8 md:mb-0">
+        <div className="md:w-full  mb-8 md:mb-0">
           <h2 className="text-4xl font-bold mb-6">Get in Touch</h2>
           <p className="text-lg mb-6">
             Have questions or need help? Contact us via the form or through our
@@ -25,7 +25,7 @@ const ContactUs: React.FC = () => {
             Email us at{" "}
             <Link
               href="mailto:raphael.azevedo@massarisystems.com"
-              className="text-[#ffc501] underline"
+              className="text-black font-bold underline"
             >
               raphael.azevedo@massarisystems.com
             </Link>
@@ -33,7 +33,7 @@ const ContactUs: React.FC = () => {
         </div>
 
         {/* Formulário de Contato */}
-        <div className="md:w-1/2 bg-white p-8 rounded-lg shadow-lg text-[#ffc501]">
+       {/*  <div className="md:w-1/2 bg-white p-8 rounded-lg shadow-lg text-[#ffc501]"> */}
           {/* <form action="#">
             <div className="mb-4">
               <label htmlFor="name" className="block text-sm font-medium mb-2">
@@ -81,8 +81,8 @@ const ContactUs: React.FC = () => {
               Send Message
             </button>
           </form> */}
-          <ContactForm />
-        </div>
+         {/*  <ContactForm /> */}
+        {/* </div> */}
       </div>
     </motion.section>
   );

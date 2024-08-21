@@ -20,8 +20,14 @@ export default function Strategy() {
   const [ref4, inView4] = useInView({ triggerOnce: false, threshold: 0.2 });
 
   return (
-    <section className="container mx-auto py-20 px-4 md:px-8 lg:px-12" id="strategy">
-      <h2 className="text-4xl md:text-6xl font-bold mb-12 text-center text-black"> Our Strategy </h2>
+    <section
+      className="container mx-auto py-20 px-4 md:px-8 lg:px-12"
+      id="strategy"
+    >
+      <h2 className="text-4xl md:text-6xl font-bold mb-12 text-center text-black">
+        {" "}
+        Our Strategy{" "}
+      </h2>
       {/* Dobra 1 */}
       <motion.section
         ref={ref1}
