@@ -37,6 +37,20 @@ const Books = () => {
       otherUrl:
         "https://www.amazon.com.br/Man-All-Markets-Street-English-ebook/dp/B00SEFEYCI/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=HX9P7E47M2E4&dib=eyJ2IjoiMSJ9.ZJTrxm0UiVnctcPH836nxK7Bx5QT12ky5eEUVxSzdDbKCy3yYJVs2HS06tbvLkxyFuuidfTJQZxHYVlHxRiVyTkdySavcrK28lGz13roi_JUQ6OHqLdHXlej06XrcX2MqNt2V5UrYx-5KxEOX_kkknG-ZqgwJOFnrjNqe6abVuqMbpzY08thHVt91pnB8LKfppzuFIfurGYcY5FygappN6JPFFfSMM_4Om7odctRkdw.-YK1JHvpyHeD-kq3jq8Oeo25y8he-AKAcK6vebbW9Ec&dib_tag=se&keywords=A+man+for+all+Markets&qid=1724335471&s=books&sprefix=a+man+for+all+markets%2Cstripbooks%2C187&sr=1-1",
     },
+    {
+      image: "/books/book-6.png",
+      title: "#6 Fortune's Formula",
+      description: "",
+      otherUrl:
+        "https://www.amazon.com.br/Fortunes-Formula-Scientific-Betting-Casinos-ebook/dp/B000SBTWNC/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3INO15FBGBFPA&dib=eyJ2IjoiMSJ9.s0kHEGyf6QhOA2rjZO4zEpDHVocXoDPM2-1cXx3bXxdqPYpEFl-neXV53bM6iffoq5ROmuzooN0NtjfX1AUpl12jzgS3bkqXyRRR1TQjMlqRkiuVSNEhL9OquvXUxYFBHJtcWF3w-EOlcYcCn1wJe5r1nOAWKJIDuQSHjA8alyiFLVGpAdI83zLyCIHeyi4a_SGLIztF5Ibullp-4glUnNniJv8WPeMObepdUzYMLpEKQSJyz2kzwriuDsJgmvVxfJGaUPJdjIiKCK8NYJEI8-WTW_XD4jfu8DmxJ6i3Jec.9W53HpzDojK6LoKcUOdjNY-GCnX65mfw3yEWj-hQTA0&dib_tag=se&keywords=fortune+formula&qid=1724342985&sprefix=fortune+formul%2Caps%2C201&sr=8-1",
+    },
+    {
+      image: "/books/book-7.png",
+      title: "#7 Option Volatility and Pricing",
+      description: "",
+      otherUrl:
+        "https://www.amazon.com.br/Option-Volatility-Pricing-Strategies-Techniques/dp/0071818774/ref=sr_1_1?crid=20J7UYDQB0VAK&dib=eyJ2IjoiMSJ9.kRWtdJmT_nc9J7DuJpda9d7e3OvIpR24mtdeWK6b3irj-03IAXcFaNJ7i0ZYTSB4yevA5c6jdDqs7GtysL5KkHNYsFV0bwN71BgcofL7bv9S8gEwA6kBCaY_81zzO5R7WTQ9ev1RO-HcEqdkIRRIvzEBKbO9wip2BfO2hNkgGobsN47KnShH7E6Gcw8z4PafgFKpb1Q5tDCedsyPEL1EJr_GX8iZ_Q83l372Jpuxl928wSbZn7DPK6bAzlxQ-K6Wn78oY_tN-SmA83aynebdX2ozElfqw-TgB9wnHa3ANpY.9QjOWJDAwG8cBOmcm9qX1vgmZ0Qku9pTruNIWncd_us&dib_tag=se&keywords=option+volatility+and+pricing&qid=1724342960&sprefix=option%2C+vola%2Caps%2C198&sr=8-1&ufe=app_do%3Aamzn1.fos.25548f35-0de7-44b3-b28e-0f56f3f96147",
+    },
   ];
 
   return (

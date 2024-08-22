@@ -33,21 +33,21 @@ const JobApplicationModal: React.FC<JobApplicationModalProps> = ({
 
       if (response.ok) {
         toast.success("Application submitted successfully!", {
-          position: 'top-right',
+          position: "top-right",
         });
         onClose();
         toast.success("Application submitted successfully!", {
-          position: 'top-right',
+          position: "top-right",
         }); // Fechar o modal após o sucesso
       } else {
         toast.error("Failed to submit application. Please try again.", {
-          position: 'top-right',
+          position: "top-right",
         });
       }
     } catch (error) {
       console.error("Error submitting application:", error);
       toast.error("An error occurred. Please try again later.", {
-        position: 'top-right',
+        position: "top-right",
       });
     } finally {
       setIsSubmitting(false);
@@ -60,7 +60,7 @@ const JobApplicationModal: React.FC<JobApplicationModalProps> = ({
       <Modal show={isOpen} onClose={onClose}>
         <Modal.Header>{title}</Modal.Header>
         <Modal.Body>
-          <p>{description}</p>
+          <p className="mb-4 text-gray-800">{description}</p>
           <form
             onSubmit={handleSubmit}
             method="POST"
