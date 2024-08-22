@@ -13,7 +13,10 @@ const ContactUs: React.FC = () => {
       transition={{ duration: 0.8, ease: "easeOut" }}
       id="contact"
     >
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center">
+      <section
+        className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center"
+        id="contact"
+      >
         {/* Texto e Título */}
         <div className="md:w-full  mb-8 md:mb-0">
           <h2 className="text-4xl font-bold mb-6">Get in Touch</h2>
@@ -33,8 +36,8 @@ const ContactUs: React.FC = () => {
         </div>
 
         {/* Formulário de Contato */}
-       {/*  <div className="md:w-1/2 bg-white p-8 rounded-lg shadow-lg text-[#ffc501]"> */}
-          {/* <form action="#">
+        {/*  <div className="md:w-1/2 bg-white p-8 rounded-lg shadow-lg text-[#ffc501]"> */}
+        {/* <form action="#">
             <div className="mb-4">
               <label htmlFor="name" className="block text-sm font-medium mb-2">
                 Name
@@ -81,9 +84,9 @@ const ContactUs: React.FC = () => {
               Send Message
             </button>
           </form> */}
-         {/*  <ContactForm /> */}
+        {/*  <ContactForm /> */}
         {/* </div> */}
-      </div>
+      </section>
     </motion.section>
   );
 };

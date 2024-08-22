@@ -27,7 +27,7 @@ const SignalsPanel: React.FC = () => {
   return (
     <section
       className="lg:overflow-hidden text-base h-full bg-[#ffc501] text-gray-800 w-full pl-3 pr-10 py-10 "
-      id="aboutUs"
+      id="aboutus"
     >
       <h2 className="text-3xl font-bold mt-10 text-white text-center">
         About Us

@@ -2,12 +2,15 @@
 import React, { useState } from "react";
 import { Button, Modal } from "flowbite-react";
 import { X } from "phosphor-react";
+import Link from "next/link";
+
 interface CardProps {
   imageUrl: string;
   altImageText: string;
   title?: string;
   description?: string;
   children?: React.ReactNode;
+  otherUrl?: string;
 }
 
 export default function Card({
@@ -15,6 +18,7 @@ export default function Card({
   altImageText,
   title,
   description,
+  otherUrl,
 }: CardProps) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -58,6 +62,9 @@ export default function Card({
           <Button onClick={closeModal}>
             <X className="text-[#cc9d00]" size={32} />
           </Button>
+          <a href={`${otherUrl}`} target="_blank" rel="noopener noreferrer">
+            <Button className="bg-[#cc9d00] text-white">Comprar</Button>
+          </a>
         </Modal.Footer>
       </Modal>
     </>
