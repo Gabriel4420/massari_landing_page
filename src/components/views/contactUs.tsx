@@ -7,24 +7,26 @@ import ContactForm from "../ui/formContact";
 const ContactUs: React.FC = () => {
   return (
     <motion.section
-      className="bg-[#ffc501] text-white py-24 px-8 md:px-16 rounded-lg shadow-lg"
+      className="bg-[#ffc501] text-white lg:py-24 py-16 px-24 md:px-16 rounded-lg shadow-lg"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
       id="contact"
     >
       <section
-        className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center"
+        className="max-w-7xl mx-auto px-10 flex flex-col md:flex-row items-center justify-center"
         id="contact"
       >
         {/* Texto e Título */}
         <div className="md:w-full  mb-8 md:mb-0">
-          <h2 className="text-4xl font-bold mb-6">Get in Touch</h2>
-          <p className="text-lg mb-6">
+          <h2 className="text-xl text-center lg:text-4xl font-bold mb-6">
+            Get in Touch
+          </h2>
+          <p className="lg:text-lg text-sm text-center mb-6">
             Have questions or need help? Contact us via the form or through our
             support channels. We&apos;re here to help you!
           </p>
-          <p className="text-lg">
+          <p className="lg:text-lg text-sm text-center ">
             Email us at{" "}
             <Link
               href="mailto:raphael.azevedo@massarisystems.com"
