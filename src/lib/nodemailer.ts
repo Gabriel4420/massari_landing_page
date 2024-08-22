@@ -6,6 +6,8 @@ const transporter = nodemailer.createTransport({
     user: process.env.GMAIL_USER,
     pass: process.env.GMAIL_PASS,
   },
+  logger: true, // Habilitar logs
+  debug: true, // Habilitar modo debug
 });
 
 export default transporter;
