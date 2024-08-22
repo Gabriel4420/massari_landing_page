@@ -37,7 +37,7 @@ const AccordionJobOpportunities: React.FC<JobOpportunitiesProps> = ({
   });
 
   return (
-    <div
+    <section
       className="bg-white text-black pb-28 pt-20 px-8 md:px-5 rounded-lg shadow-lg"
       id="joinus"
     >
@@ -98,7 +98,7 @@ const AccordionJobOpportunities: React.FC<JobOpportunitiesProps> = ({
           })}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

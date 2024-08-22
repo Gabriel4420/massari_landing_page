@@ -9,6 +9,7 @@ interface CarouselProps {
     image: string;
     title: string;
     description?: string;
+    otherUrl?: string | undefined;
   }[];
 }
 
@@ -30,17 +31,18 @@ const Carousel: React.FC<CarouselProps> = ({ items }) => {
         className="relative lg:h-[500px] h-[600px] w-full"
       >
         {items.map((item, index) => (
-            <div
-              className="flex justify-center items-center h-full w-full"
-              key={index}
-            >
-              <Card
-                imageUrl={item.image}
-                altImageText={item.title}
-                title={item.title}
-                description={item.description}
-              />
-            </div>
+          <div
+            className="flex justify-center items-center h-full w-full"
+            key={index}
+          >
+            <Card
+              imageUrl={item.image}
+              altImageText={item.title}
+              title={item.title}
+              description={item.description}
+              otherUrl={item.otherUrl}
+            />
+          </div>
         ))}
       </FlowbiteCarousel>
       {/* Custom Indicators */}
