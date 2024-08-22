@@ -58,7 +58,7 @@ export default function Card({
             className="w-full h-auto object-cover rounded-lg"
           />
         </Modal.Body>
-        <Modal.Footer>
+        <Modal.Footer className="flex justify-between">
           <Button onClick={closeModal}>
             <X className="text-[#cc9d00]" size={32} />
           </Button>
