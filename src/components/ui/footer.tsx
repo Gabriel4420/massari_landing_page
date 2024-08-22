@@ -5,11 +5,15 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-gray-800 text-white py-2">
       <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center">
+        <div className="flex flex-col gap-4 md:flex-row lg:flex-row justify-between items-center">
           <div>
-           <img src="/logo-google-startup.png" className="h-28 w-full" alt="Google startup" /> 
+            <img
+              src="/logo-google-startup.png"
+              className="h-28 w-full p-0"
+              alt="Google startup"
+            />
           </div>
-          <p className="text-sm">
+          <p className="text-sm lg:mb-0 mb-4 -mt-4">
             Development by{" "}
             <Link
               href="https://gabrielrodrigues.vercel.app"
@@ -21,7 +25,7 @@ const Footer: React.FC = () => {
               </span>
             </Link>
           </p>
-          <p className="text-sm">
+          <p className="text-sm py-4 md:py-0 ld:py-0 ">
             &copy; {new Date().getFullYear()} Massari Systems. All rights
             reserved.{" "}
           </p>
