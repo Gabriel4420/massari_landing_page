@@ -45,7 +45,7 @@ const AccordionJobOpportunities: React.FC<JobOpportunitiesProps> = ({
       <div className="flex flex-col md:flex-row lg:flex-row items-center justify-center">
         <div className="md:w-1/2 lg:w-1/2 w-full h-full mb-10 flex items-center justify-center text-center">
           <img
-            src="/logo massari systems.png"
+            src="/logo massari systems coruja.png"
             className="w-full h-full object-cover lg:object-contain"
             alt="logo"
           />
