@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import React, { useState, useEffect, useRef } from 'react';
-import { motion, useAnimation } from 'framer-motion';
-import Link from 'next/link';
+import React, { useState, useEffect, useRef } from "react";
+import { motion, useAnimation } from "framer-motion";
+import Link from "next/link";
 
 const FractalLandingPage = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [modalImage, setModalImage] = useState('');
+  const [modalImage, setModalImage] = useState("");
   const controls = useAnimation();
   const sectionRef = useRef<HTMLDivElement | null>(null);
 
@@ -52,9 +52,12 @@ const FractalLandingPage = () => {
         className="text-center mb-12"
         ref={sectionRef}
       >
-        <h1 className="text-4xl font-bold mb-6 text-gray-800">Understanding Fractals: Regular vs Irregular</h1>
+        <h1 className="text-4xl font-bold mb-6 text-gray-800">
+          Understanding Fractals: Regular vs Irregular
+        </h1>
         <p className="text-lg text-gray-800">
-          Explore the world of fractals and their practical applications in market analysis.
+          Explore the world of fractals and their practical applications in
+          market analysis.
         </p>
       </motion.section>
 
@@ -69,13 +72,13 @@ const FractalLandingPage = () => {
           src="banner/regular-vs-irregular.png"
           alt="Regular vs Irregular Fractal"
           className="rounded-lg shadow-lg cursor-pointer"
-          onClick={() => openModal('banner/regular-vs-irregular.png')}
+          onClick={() => openModal("banner/regular-vs-irregular.png")}
         />
         <img
           src="banner/regular-vs-irregular-2.png"
           alt="Regular vs Irregular Fractal 2"
           className="rounded-lg shadow-lg cursor-pointer"
-          onClick={() => openModal('banner/regular-vs-irregular-2.png')}
+          onClick={() => openModal("banner/regular-vs-irregular-2.png")}
         />
       </motion.section>
 
@@ -106,19 +109,22 @@ const FractalLandingPage = () => {
         <div className="p-6 bg-white rounded-lg shadow-lg">
           <h2 className="text-2xl font-bold mb-4">Regular Fractals</h2>
           <p className="text-gray-800">
-            Regular fractals are self-similar patterns that repeat at different scales. Learn how these patterns can be used to predict market trends.
+            Regular fractals are self-similar patterns that repeat at different
+            scales. Learn how these patterns can be used to predict market
+            trends.
           </p>
         </div>
         <div className="p-6 bg-white rounded-lg shadow-lg">
           <h2 className="text-2xl font-bold mb-4">Irregular Fractals</h2>
           <p className="text-gray-800">
-            Irregular fractals, while less predictable, reveal complex behaviors in markets. Discover their role in identifying market anomalies.
+            Irregular fractals, while less predictable, reveal complex behaviors
+            in markets. Discover their role in identifying market anomalies.
           </p>
         </div>
       </motion.section>
 
       {/* CTA Section */}
-      <motion.section
+      {/* <motion.section
         initial={{ opacity: 0, scale: 0.8 }}
         animate={controls}
         transition={{ duration: 0.5 }}
@@ -129,7 +135,7 @@ const FractalLandingPage = () => {
             Learn How Fractals Can Benefit Your Investments
           </button>
         </Link>
-      </motion.section>
+      </motion.section> */}
     </div>
   );
 };
