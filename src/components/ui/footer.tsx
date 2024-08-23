@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
     <footer className="bg-gray-800 text-white py-2">
       <div className="container mx-auto px-4">
         <div className="flex flex-col gap-4 md:flex-row lg:flex-row justify-between items-center">
-          <p className="absolute lg:bottom-10 text-sm lg:mb-0 mb-4 lg:-mt-12 mt-4">
+          <p className="absolute text-sm lg:mb-0 mb-4 lg:-mt-12 mt-4">
             Acelerated by{" "}
           </p>
           <div>
