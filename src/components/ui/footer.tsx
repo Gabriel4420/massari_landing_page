@@ -6,10 +6,11 @@ const Footer: React.FC = () => {
     <footer className="bg-gray-800 text-white py-2">
       <div className="container mx-auto px-4">
         <div className="flex flex-col gap-4 md:flex-row lg:flex-row justify-between items-center">
+          <p className="text-sm lg:mb-0 mb-4 -mt-4">Acelerated by </p>
           <div>
             <img
               src="/logo-google-startup.png"
-              className="h-28 w-full p-0"
+              className="h-28 w-full object-contain p-0"
               alt="Google startup"
             />
           </div>
