@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col gap-4 md:flex-row lg:flex-row justify-between items-center">
           <p className="absolute text-sm lg:mb-0 mb-4 lg:-mt-12 mt-4">
-            Acelerated by{" "}
+            Accelerated by{" "}
           </p>
           <div>
             <img
@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
               alt="Google startup"
             />
           </div>
-          <p className="text-sm lg:mb-0 mb-4 -mt-4">
+         {/*  <p className="text-sm lg:mb-0 mb-4 -mt-4">
             Development by{" "}
             <Link
               href="https://gabrielrodrigues.vercel.app"
@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
                 Gabriel4420
               </span>
             </Link>
-          </p>
+          </p> */}
           <p className="text-sm py-4 md:py-0 ld:py-0 ">
             &copy; {new Date().getFullYear()} Massari Systems. All rights
             reserved.{" "}
